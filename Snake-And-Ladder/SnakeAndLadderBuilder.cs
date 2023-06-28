@@ -13,11 +13,11 @@ namespace Snake_And_Ladder
             Console.WriteLine("The option is Noplay");
             return position;    
         }
-        public int Ladder(int position,int diceRoll) 
+        public int Ladder(int position,int diceRoll,int winposi) 
         {
             Console.WriteLine("The option is Ladder");
             position += diceRoll;
-            if (position > 100)
+            if (position > winposi)
             {
                 position -= diceRoll;
             }
