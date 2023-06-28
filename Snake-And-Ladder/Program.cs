@@ -7,15 +7,15 @@
             int position = 0;
             Console.WriteLine($"Player current position is {position}");
             Random random = new Random();
-            
-            
-            
             SnakeAndLadderBuilder snakeAndLadder = new SnakeAndLadderBuilder();
+            int count = 0;
+
             while (position<100)
             {
                 int diceRoll = random.Next(1, 7);
                 Console.WriteLine($"The value come after rolling dice is {diceRoll}");
                 int option = random.Next(1, 4);
+                count++;
                 switch (option)
                 {
                     case 1:
@@ -32,6 +32,7 @@
                         break;
                 }
             }
+            Console.WriteLine("Total number of time the dice was rolled " + count);
             
 
         }
