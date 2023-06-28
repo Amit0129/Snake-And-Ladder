@@ -12,6 +12,9 @@ namespace Snake_And_Ladder
         {
             int position = 0;
             Console.WriteLine($"Player current position is {position}");
+            Random random= new Random();
+            int diceRoll = random.Next( 1, 7 );
+            Console.WriteLine($"The value come after rolling dice is {diceRoll}");
         }
     }
 }
