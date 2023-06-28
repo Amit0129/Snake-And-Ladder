@@ -17,6 +17,10 @@ namespace Snake_And_Ladder
         {
             Console.WriteLine("The option is Ladder");
             position += diceRoll;
+            if (position > 100)
+            {
+                position -= diceRoll;
+            }
             return position;
         }
         public int Snake(int position,int diceRoll)
